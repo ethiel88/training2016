@@ -14,8 +14,8 @@ class Estudiante{
 
 	private $link;
 	private $dbhost = "localhost";
-	private $dbuser = "root";
-	private $dbpass = "mysqlzneptune";
+	private $dbuser = "usuario";
+	private $dbpass = "password";
 	private $dbname = "training2016";
 
 
@@ -120,7 +120,8 @@ class Estudiante{
 	}
 
 	function getIntereses(){
-		return $this->intereses;
+		if(is_array($this->intereses))return $this->intereses;
+		else return array();
 	}
 
 	function getId(){
@@ -173,6 +174,29 @@ class Estudiante{
 	}
 
 	function update(){
+		$datos = array(
+			"nombres" => $this->getNombres(),
+			"apellido_paterno" => $this->getApellido_paterno(),
+			"apellido_materno" => $this->getApellido_materno(),
+			"genero" => $this->getGenero(),
+			"pais" => $this->getPais(),
+			"direccion" => $this->getDireccion(),
+			"telefono" => $this->getTelefono(),
+			"institucion" => $this->getInstitucion(),
+			"intereses" => serialize($this->getIntereses()),
+		);
+
+		if("" == $this->getTelefono()) unset($datos['telefono']);
+		if("" == $this->getDireccion()) unset($datos['direccion']);
+		if("" == $this->getInstitucion()) unset($datos['institucion']);
+
+		$campos = "";
+		foreach($datos as $key=>$value){
+			$campos .= ",`$key`='$value'";
+		}
+		$sql ="UPDATE estudiante SET ".substr($campos, 1)." WHERE id=".$this->getId();
+		
+		$this->link->query($sql);
 	}
 
 	function remove(){
