@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +23,7 @@ Route::controllers([
 Route::resource('registro', 'RegistroController');
 
 Route::get('eliminar/{id}', ['as'=>'eliminar', 'uses'=>'RegistroController@eliminar']);
+
+Route::get('vista', function(){
+	return view('vista', ['nombre'=>'Alfredo']);
+});
