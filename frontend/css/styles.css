@@ -1,0 +1,68 @@
+/* setear estilos generales de todos de una pagina*/
+
+body{
+    padding: 0; margin: 0; width: 100%;
+}
+p{
+    padding: 10;
+}
+div{
+    width: 100%;
+}
+
+/* estilos para la seccion header */
+.header{
+    background: #000 url(../imagenes/hero2.jpg) no-repeat;
+    overflow: hidden;
+    height: 927px;
+    padding: 30px;
+    background-size: cover;
+    margin: 0;
+}
+.header .section-logo{
+    width: 50%;
+    float: left;
+    height: 50px;
+    background: transparent;
+}
+
+.header .section-login{
+    width: 50%;
+    float: right;
+    height: 50px;
+    background: transparent;
+    text-align: right;
+
+}
+.header .section-login .button-login{
+    color: #fff; border: 1px solid #fff; display: inline; padding: 5px 20px;
+    border-radius: 3px
+}
+.header .section-login .button-login:hover{
+    color: #f37974; border: 1px solid #f37974;
+}
+.header .section-login .button-login:active{
+    color: #f37974;
+    border: 1px solid #f37974;
+    background: #45302f;
+}
+.main-wrap{
+    margin: 0; padding: 0;
+}
+
+/*estilos para la seccion 1*/
+.section1{
+    width: 100%;
+    background: yellow;
+    margin: 0;
+    padding: 40 0;
+    background: url("../imagenes/section1.png") no-repeat;
+
+}
+.section1 .internal{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    background: yellow;
+    display: inline;
+}

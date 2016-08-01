@@ -1,0 +1,64 @@
+.section1{
+  width: 100%;
+  background: yellow;
+  margin: 0;
+  padding: 40 0;
+  background: url("../imagenes/section1.png") no-repeat;
+  .internal{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    h1{
+      text-transform: uppercase;
+    }
+    button{
+      background: red;
+      color: #fff;
+      border: 0;
+      padding: 8px 20px;
+      border-radius: 5px;
+      span{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.carrusel{
+  .internal-2{
+    overflow: hidden;
+    display: block;
+    width: 80%;
+    background: #ffff00;
+    margin: 0 auto;
+    .item{
+      float:left;
+      width: 25%;
+      overflow: hidden;
+      img{
+        margin: 20px 5px;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+
+.polar{
+  background: #666;
+  .internal-3{
+    width: 40%;
+    color:#fff;
+    padding: 50px;
+    h3{}
+    h1{
+      text-transform: uppercase;
+    }
+    a{
+      color: #fff;
+    }
+  }
+}

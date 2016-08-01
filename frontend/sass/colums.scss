@@ -1,0 +1,54 @@
+/* variables para los screens*/
+$mobile: 420px;
+$tablet: 760px;
+
+.columnas{
+  overflow: hidden;
+}
+.full{
+  width: 98%;
+  margin: 20px 1%;
+  background: #212121;
+  height: 40px;
+}
+.col-1{
+  width: 8.63%;
+  margin: 5px 1%;
+  background: #0066b3;
+  height: 40px;
+  float: left;
+}
+.col-3{
+  width: 22.93%;
+  margin: 5px 1%;
+  background: #3b5998;
+  height: 40px;
+  float: left;
+  @media screen and (max-width: $tablet){
+    width: 47.86%;
+  }
+  @media screen and (max-width: $mobile){
+    width: 98%;
+  }
+}
+.col-4{
+  width: 30.63%;
+  margin: 5px 1%;
+  background: #ffff00;
+  height: 40px;
+  float: left;
+}
+.col-6{
+  width: 47.83%;
+  margin: 5px 1%;
+  background: #ffff00;
+  height: 40px;
+  float: left;
+}
+.col-7{
+  width: 54.63%;
+  margin: 5px 1%;
+  background: red;
+  height: 40px;
+  float: left;
+}

@@ -1,0 +1,39 @@
+.header{
+  background: #000 url(../imagenes/hero2.jpg) no-repeat;
+  overflow: hidden;
+  height: 600px;
+  padding: 30px;
+  background-size: cover;
+  margin: 0;
+  .section-logo{
+    width: 50%;
+    float: left;
+    height: 50px;
+    background: transparent;
+  }
+  .section-login{
+    width: 50%;
+    float: right;
+    height: 50px;
+    background: transparent;
+    text-align: right;
+    .button-login{
+      //
+      &:hover{
+
+      }
+      &:active{
+
+      }
+    }
+    .button-login:hover{
+
+    }
+    .button-login:active{
+
+    }
+  }
+
+}
+
+

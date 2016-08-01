@@ -1,0 +1,127 @@
+body {
+  font-family: arial; }
+
+footer {
+  height: 50px;
+  background: #212121; }
+
+.header {
+  background: #000 url(../imagenes/hero2.jpg) no-repeat;
+  overflow: hidden;
+  height: 600px;
+  padding: 30px;
+  background-size: cover;
+  margin: 0; }
+  .header .section-logo {
+    width: 50%;
+    float: left;
+    height: 50px;
+    background: transparent; }
+  .header .section-login {
+    width: 50%;
+    float: right;
+    height: 50px;
+    background: transparent;
+    text-align: right; }
+
+.section1 {
+  width: 100%;
+  background: yellow;
+  margin: 0;
+  padding: 40 0;
+  background: url("../imagenes/section1.png") no-repeat; }
+  .section1 .internal {
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 0 auto; }
+    .section1 .internal h1 {
+      text-transform: uppercase; }
+    .section1 .internal button {
+      background: red;
+      color: #fff;
+      border: 0;
+      padding: 8px 20px;
+      border-radius: 5px; }
+      .section1 .internal button span {
+        margin-left: 10px; }
+
+.carrusel .internal-2 {
+  overflow: hidden;
+  display: block;
+  width: 80%;
+  background: #ffff00;
+  margin: 0 auto; }
+  .carrusel .internal-2 .item {
+    float: left;
+    width: 25%;
+    overflow: hidden; }
+    .carrusel .internal-2 .item img {
+      margin: 20px 5px;
+      width: 100%;
+      display: block; }
+
+.polar {
+  background: #666; }
+  .polar .internal-3 {
+    width: 40%;
+    color: #fff;
+    padding: 50px; }
+    .polar .internal-3 h1 {
+      text-transform: uppercase; }
+    .polar .internal-3 a {
+      color: #fff; }
+
+/* variables para los screens*/
+.columnas {
+  overflow: hidden; }
+
+.full {
+  width: 98%;
+  margin: 20px 1%;
+  background: #212121;
+  height: 40px; }
+
+.col-1 {
+  width: 8.63%;
+  margin: 5px 1%;
+  background: #0066b3;
+  height: 40px;
+  float: left; }
+
+.col-3 {
+  width: 22.93%;
+  margin: 5px 1%;
+  background: #3b5998;
+  height: 40px;
+  float: left; }
+  @media screen and (max-width: 760px) {
+    .col-3 {
+      width: 47.86%; } }
+  @media screen and (max-width: 420px) {
+    .col-3 {
+      width: 98%; } }
+
+.col-4 {
+  width: 30.63%;
+  margin: 5px 1%;
+  background: #ffff00;
+  height: 40px;
+  float: left; }
+
+.col-6 {
+  width: 47.83%;
+  margin: 5px 1%;
+  background: #ffff00;
+  height: 40px;
+  float: left; }
+
+.col-7 {
+  width: 54.63%;
+  margin: 5px 1%;
+  background: red;
+  height: 40px;
+  float: left; }
+
+/*# sourceMappingURL=app.css.map */
